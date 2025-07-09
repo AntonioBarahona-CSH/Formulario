@@ -17,90 +17,83 @@
 
     <hr>
 
-        <form action="" method="post">
+        <form action="confirm.html" method="get">
             <h1 style="display: flex; justify-content: center; align-items: center; height: 20px;">Ingresa tus datos para matricularte</h1>
 
             <div class="Tunombre" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Tunombre">Nombre Completo: </label>
-                <input type="" placeholder="Ingrese su nombre completo">
+                <input type="text" id="Tunombre" name="Tunombre" placeholder="Ingrese su nombre completo">
             </div>
 
             <br>
 
             <div class="Numid" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Numid">Número según documeto (DUI, PASAPORTE, ID):</label>
-                <input type="" placeholder="Ejem: 00716331-8">
+                <input type="text" id="Numid" name="Numid" placeholder="Ejem: 00716331-8">
             </div>
 
             <br>
 
             <div class="Escuela" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Escuela">Escuela donde estudió el año anterior:</label>
-                <input type="" placeholder="Ingrese el nombre">
+                <input type="text" id="Escuela" name="Escuela"  placeholder="Ingrese el nombre">
             </div>
 
             <br>
 
             <div class="Edad" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Edad">Edad:</label>
-                <input type="" placeholder="Ingrese su Edad">
+                <input type="number" id="Edad" name="Edad" placeholder="Ingrese su Edad">
             </div>
 
             <br>
 
             <div class="Maestro" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Maestro">Ingrese el nombre de su orientador anterior:</label>
-                <input type="" placeholder="Ingrese el nombre">
+                <input type="text" id="Maestro" name="Maestro" placeholder="Ingrese el nombre">
             </div>
 
             <br>
 
             <div class="Correo" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Correo">Ingresa el correo institucional:</label>
-                <input type="" placeholder="Ejem: ola@outlook.com">
+                <input type="email" id="Correo" name="Correo" placeholder="Ejem: ola@outlook.com">
             </div>
 
             <br>
 
-            <p style="display: flex; justify-content: center; align-items: center; height: 20px;"><b>Genero/Sexualidad:</b>
-                <input type="radio" id="N/A" name="sexo" value="N/A">
-                <label for="N/A">N/A</label>
-
-                <input type="radio" id="Masculino" name="sexo" value="Masculino">
-                <label for="masculino">Masculino</label>
-
-                <input type="radio" id="Femenino" name="sexo" value="Femenino">
-                <label for="Femenino">Femenino</label>
-
-                <input type="radio" id="No binario" name="sexo" value="No binario">
-                <label for="No binario">No binario</label>
-            </p>
+            <div class="Genero-Sexualidad" style="display: flex; justify-content: center; align-items: center; height: 20px;">
+                <label><b>Género / Sexualidad:</b></label>
+                <label><input type="radio" name="sexo" value="N/A"> N/A</label>
+                <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
+                <label><input type="radio" name="sexo" value="Femenino"> Femenino</label>
+                <label><input type="radio" name="sexo" value="No binario"> No binario</label>
+            </div>
 
             <br>
             
             <div class="Numtel" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Numtel">Número de teléfono:</label>
-                <input type="" placeholder="Ingrese su numero de tel">
+                <input type="tel" id="Numtel" name="Numtel" placeholder="Ingrese su numero de tel">
             </div>
 
             <br>
 
             <div class="Nacimiento" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Nacimiento">Ingrese su fecha de nacimiento:</label>
-                <input type="date" placeholder="Fecha">
+                <input type="date" id="Nacimiento" name="Nacimiento" placeholder="Fecha">
             </div>
 
             <br>
             
             <div class="Direccion" style="display: flex; justify-content: center; align-items: center; height: 20px;">
                 <label for="Direccion">Ingrese su dirección:</label>
-                <input type="" placeholder="Ejem: Psje 3, casa 2">
+                <input type="text" id="Direccion" name="Direccion" placeholder="Ejem: Psje 3, casa 2">
             </div>
 
             <br>
 
-            <!-- PARA ACEPTAR CON LOS TERMINOS Y CONDICIONES-->
-            <p style="display: flex; justify-content: center; align-items: center; height: 20px;"><b>HE LEIDO Y ACEPTO LOS <a href="https://www.utec.edu.sv/home/normas_y_reglamentos" target="_blank">TERMINOS Y CONDICIONES</a></b>
+            <p style="display: flex; justify-content: center; align-items: center; height: 20px;"><b>HE LEIDO Y ACEPTO LAS <a href="https://www.utec.edu.sv/home/normas_y_reglamentos" target="_blank">NORMAS Y REGLAMENTOS</a></b>
                 <input type="radio" id="ACEPTO TODO" name="aceptar" value="ACEPTO TODO">
                 <label for="ACEPTO TODO">ACEPTO TODO</label>
 
@@ -108,7 +101,7 @@
                 <label for="PEFIERO NO DECIR">PREFIERO NO DECIR</label>
             </p>
 
-            <!-- ESTE BOTÓN ES PARA ENVIAR-->
+            <!-- ESTE BOTÓN ES PARA ENVIAR, Y AL APRETAR NOS ENVIA A OTRA PAGINA CON UN MENSAJE-->
             <div style="text-align: center;">
                 <button style="width: 150px; height: 30px;">ENVIAR TODO</button>
             </div>
